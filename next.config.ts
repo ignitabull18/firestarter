@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Enable standalone builds for Docker optimization
+  output: 'standalone',
+  
   // Remove assetPrefix to fix image loading issues
   images: {
     remotePatterns: [
